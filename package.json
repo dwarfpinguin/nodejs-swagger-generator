@@ -2,7 +2,7 @@
     "name": "swagger-generator",
     "displayName": "swagger-generator",
     "description": "Generates swagger documentation",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "dwarfpenguin",
     "engines": {
         "vscode": "^1.23.0"
@@ -28,7 +28,7 @@
                 "swaggergen.inputPath": {
                     "type": "string",
                     "description": "The path to the API files",
-                    "default": ""  
+                    "default": ""
                 },
                 "swaggergen.outputPath": {
                     "type": "string",
@@ -58,7 +58,6 @@
             }
         }
     },
-    
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
