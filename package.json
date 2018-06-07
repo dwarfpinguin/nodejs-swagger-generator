@@ -3,7 +3,7 @@
     "displayName": "swagger-generator",
     "description": "Generates swagger documentation",
     "version": "0.0.1",
-    "publisher": "Dwarf Penguin",
+    "publisher": "dwarfpenguin",
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -74,5 +74,6 @@
     },
     "dependencies": {
         "mkdirp": "^0.5.1"
-    }
+    },
+    "repository": "https://github.com/dwarfpinguin/nodejs-swagger-generator.git"
 }
