@@ -1,4 +1,4 @@
-# swagger-generator README
+# Swagger made easy
 
 This is a quickly made generator that loops trough all documents in a specified folder and makes
 swagger documentation for all files that use express. It will take out all the "req.body" values
