@@ -29,3 +29,10 @@ This extension contributes the following settings:
 * `swaggergen.documentationName`: Title that will be at the top of the documentation (default "API documentation")
 * `swaggergen.swagger`: Swagger version (default "2.0")
 * `swaggergen.version`: Version of the documentation (default "1.0")
+
+## Dependencies
+
+The extension depends on these packages:
+
+* `swagger-node-express`: `~2.0`
+* `swagger-ui-express`: `^2.0.15`
