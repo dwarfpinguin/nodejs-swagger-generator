@@ -1,0 +1,78 @@
+{
+    "name": "swagger-generator",
+    "displayName": "swagger-generator",
+    "description": "Generates swagger documentation",
+    "version": "0.0.1",
+    "publisher": "Dwarf Penguin",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.swagger-generator"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.swagger-generator",
+                "title": "swagger-generator"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "swaggergen",
+            "properties": {
+                "swaggergen.inputPath": {
+                    "type": "string",
+                    "description": "The path to the API files",
+                    "default": ""  
+                },
+                "swaggergen.outputPath": {
+                    "type": "string",
+                    "description": "The path where the generated files will be saved",
+                    "default": ""
+                },
+                "swaggergen.hostName": {
+                    "type": "string",
+                    "description": "Name of the swagger host",
+                    "default": "http://localhost:8080"
+                },
+                "swaggergen.documentationName": {
+                    "type": "string",
+                    "description": "Title of the documentation",
+                    "default": "API documentation"
+                },
+                "swaggergen.swagger": {
+                    "type": "string",
+                    "description": "Swagger version",
+                    "default": "2.0"
+                },
+                "swaggergen.version": {
+                    "type": "string",
+                    "description": "Documentation version",
+                    "default": "1.0"
+                }
+            }
+        }
+    },
+    
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "mkdirp": "^0.5.1"
+    }
+}
