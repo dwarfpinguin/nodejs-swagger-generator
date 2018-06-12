@@ -2,9 +2,10 @@
     "name": "swagger-generator",
     "displayName": "swagger-generator",
     "description": "Generates swagger documentation",
-    "version": "0.1.1",
+    "icon": "images/icon.png",
+    "version": "0.1.0",
     "publisher": "dwarfpenguin",
-    "engines": {
+    "engines": { 
         "vscode": "^1.23.0"
     },
     "categories": [
